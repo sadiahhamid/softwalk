@@ -1,0 +1,268 @@
+:root {
+  --pink: #ff7eb6; /* soft luxury pink */
+  --pink-dark: #ff4f9a;
+  --white: #ffffff;
+  --bg: #fff5f9; /* very light pink background */
+  --text: #2b1b22;
+  --shadow: rgba(0, 0, 0, 0.08);
+}
+
+body {
+  font-family: sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ===== NAV ===== */
+.navbar {
+  background: var(--white) !important;
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.navbar-logo {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+  transition: 0.3s;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: linear-gradient(135deg, var(--white), #ffe6f1);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  color: var(--pink-dark);
+  font-weight: bold;
+}
+
+.hero p {
+  color: #6b4a57;
+}
+
+.hero img {
+  width: 320px;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px var(--shadow);
+  transition: 0.3s;
+}
+
+.hero img:hover {
+  transform: scale(1.05);
+}
+.carousel-item img {
+  height: 450px; /* می‌تونی تغییرش بدی */
+  object-fit: cover; /* عکس را کراپ می‌کند ولی کش نمی‌دهد */
+  width: 100%;
+}
+
+/* ===== TITLES ===== */
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: var(--pink-dark);
+}
+
+/* ===== FEATURE STRIP ===== */
+.feature-strip {
+  background: var(--pink);
+  color: white;
+  padding: 20px;
+  font-weight: 600;
+}
+
+/* ===== PRODUCT CARD ===== */
+.product {
+  border: none;
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--white);
+  transition: 0.3s;
+  box-shadow: 0 6px 18px var(--shadow);
+}
+
+.product:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px var(--shadow);
+}
+
+.product img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ===== BUTTON ===== */
+.btn-green {
+  background: var(--pink);
+  color: white;
+  border-radius: 12px;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-green:hover {
+  background: var(--pink-dark);
+}
+
+/* ===== BANNER ===== */
+.banner {
+  background: var(--white);
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 2px solid #ffe0ec;
+  border-bottom: 2px solid #ffe0ec;
+}
+
+.banner h2 {
+  color: var(--pink-dark);
+}
+
+#about {
+  padding: 90px 0;
+  background: linear-gradient(135deg, #f8f9fa, #ffffff);
+}
+
+#about h2 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  color: #111;
+  position: relative;
+}
+
+#about {
+  padding: 90px 0;
+  background: linear-gradient(135deg, #fff0f5, #ffe4ec);
+}
+
+#about h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #c2185b; /* صورتی تیره لوکس */
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* خط زیر عنوان */
+#about h2::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background: #c2185b;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 10px;
+}
+
+#about p {
+  max-width: 750px;
+  margin: 0 auto 18px auto;
+  font-size: 17px;
+  line-height: 1.9;
+  color: #444;
+  transition: 0.3s ease;
+}
+
+/* hover soft pink effect */
+#about p:hover {
+  color: #c2185b;
+  transform: translateY(-2px);
+}
+/* ===== STATS ===== */
+.stats {
+  background: var(--pink);
+  color: white;
+  padding: 40px 20px;
+  font-weight: 600;
+}
+
+/* ===== REVIEW ===== */
+.review {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px var(--shadow);
+}
+
+/* CONTACT SECTION BACKGROUND */
+.contact-section {
+  background: linear-gradient(135deg, #fff0f5, #ffe4ec);
+}
+
+/* TITLE */
+.contact-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #c2185b;
+  position: relative;
+}
+
+/* underline style */
+.contact-section h2::after {
+  content: "";
+  width: 90px;
+  height: 3px;
+  background: #c2185b;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 10px;
+}
+
+/* FORM CARD */
+.contact-box {
+  background: #fff;
+  border-radius: 20px;
+}
+
+/* INPUT FOCUS */
+.contact-box .form-control {
+  border-radius: 12px;
+  border: 1px solid #f3c1d2;
+  padding: 12px;
+  transition: 0.3s ease;
+}
+
+.contact-box .form-control:focus {
+  border-color: #c2185b;
+  box-shadow: 0 0 10px rgba(194, 24, 91, 0.2);
+}
+
+/* PINK BUTTON */
+.btn-pink {
+  background: linear-gradient(135deg, #e91e63, #c2185b);
+  color: white;
+  border-radius: 12px;
+  padding: 12px;
+  font-weight: 600;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn-pink:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(194, 24, 91, 0.3);
+}
+
+/* MAP BOX */
+.map-box {
+  height: 100%;
+  min-height: 350px;
+  border-radius: 20px;
+}
+/* ===== FOOTER ===== */
+footer {
+  background: var(--white);
+  color: var(--pink-dark);
+  text-align: center;
+  padding: 25px;
+  border-top: 1px solid #ffe0ec;
+}
